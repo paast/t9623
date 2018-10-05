@@ -5,7 +5,9 @@ export default class BlockObject {
     this.color = "rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] + ")";
     this.id = i;
     i ++;
+
+    this.chunks = [];
   }
 }
 
-let i = 0;
+let i = 1000;

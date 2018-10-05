@@ -15,7 +15,7 @@ export default class Left extends React.Component {
 }
 
 class AddBlock extends React.Component {
-  createBlock() {
+  createBlock = () => {
     dispatcher.dispatch({
       type: "CREATE_BLOCK"
     });
@@ -23,7 +23,7 @@ class AddBlock extends React.Component {
 
   render() {
     return (
-      <div className="addBlock" onClick={this.createBlock.bind(this)}>
+      <div className="addBlock" onClick={this.createBlock}>
         <div className="plus-x"></div>
         <div className="plus-y"></div>
       </div>
